@@ -6,11 +6,11 @@
     <body>
         <div class="resumeContainer">
             <div class="navBarContainer" id="navBar">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#technologies">Technical Skills</a>
-                <a href="#certifications">Certifcations</a>
-                <a href="#education">Education</a>
+                <a class="navBarLink" href="#about">About</a>
+                <a class="navBarLink" href="#experience">Experience</a>
+                <a class="navBarLink" href="#technologies">Technical Skills</a>
+                <a class="navBarLink" href="#certifications">Certifcations</a>
+                <a class="navBarLink" href="#education">Education</a>
             </div>
     
             <div  class="resumeSection twoColumnResumeSection aboutSection" id="about">
@@ -18,7 +18,7 @@
                     <h1>About</h1>
                 </div>
 
-                <div class="borderRight" style="padding-right: 2rem">
+                <div class="borderRight" style="padding-right: 2rem;">
                     <p>
                         Hello world! I&#39m Kyle Fullerton, I'm a budding full-stack software engineer by trade and a gamer by choice.
                         I&#39ve found that gaming has given me different power ups that can relate to helping a company or team achieve their goals. 
@@ -49,12 +49,22 @@
                 </div>
 
                 <div class="alignCenter">
-                    <img src="../Video Game Images/Breath of the Wild.jpg" style="height: 500px; width: 300px">
+                    <img src="images/kyle_2020.JPG" style="height: 28rem; width: 24rem">
                 </div>
 
-                <h3 class="alignCenter">Email: kfullerton752@gmail.com</h3>
-                <h3 class="alignCenter">Linkedin: www.linkedin.com/in/kyle-fullerton-931162156</h3>
-                
+                <div class="spanColumns" style="border: 1px solid rgb(200 0 0); margin-top: 2rem;"></div>
+
+                <div class="alignCenter spanColumns">
+                    <h3 >Email: kfullerton752@gmail.com</h3>
+                </div>
+
+                <div class="alignCenter spanColumns">
+                    <h3 style="display: inline;">Linkedin:</h3>
+                    <a class="alignCenter pageLink" href="https://www.linkedin.com/in/kyle-fullerton-931162156" target="_blank">
+                        www.linkedin.com/in/kyle-fullerton-931162156
+                    </a>
+                </div>
+
             </div>
     
             <div class="resumeSection twoColumnResumeSection experienceSection" id="experience">
@@ -78,41 +88,26 @@
                 <h4>
                     Streamline routing logic of ci/cd portal to help with future development
                 </h4>
-
-                <p class="spanColumns">
-                    Still with the front end team, I continued work on the CI/CD portal. Now that the release portion
-                    of the portal had been ported there were still more kinks that needed to be worked out. 
-                    The way routing was handled was a mess as it was handled with one gigantic, convoluted switch 
-                    within one component that routed to different views based on the user's role, what type of 
-                    they were trying to release, and what page they needed to get to. In order to simplify our code,
-                    I worked on separating out portions of the code that could be their own standalone components into microservices.
-                    This allowed our routing to only have to handle routing to the specific micro service needed and the rest would 
-                    be handled by that component. 
-                </p>
-
-                <p class="spanColumns">
-                    I transferred to a new team white still with the title of software engineer. 
-                    I was back to working with the loan origination side of the business.
-                    Here business analysts would provide a scenario in our loan origination system such as why are 
-                    customers with a certain credit score receiving this interest rate. I was tasked with looking 
-                    our system and documenting the behavior. The tasks required different areas of the system I would need to inspect.
-                    Whether that be running an application through our spring boot application and showing what our Oracle database is
-                    recording for the application or querying the Cassandra database to show behavior in another part of our system. 
-                </p>
-
-                <p class="spanColumns">
-                    Other times I would do this research but then I would also fix problematic behavior in the system.
-                    So I’d own my changes from end to end by designing a solution and getting the sign off from the business analyst,
-                    implement and test my changes, get final sign off from the business analyst, and prepare my changes for release 
-                    utilizing our Jenkins pipeline. 
-                </p>
-
                 <div class="spanColumns" style="border: 1px solid rgb(200 0 0);"></div>
+
                 <h2>Senior Associate Software Engineer</h2>
                 <h2 class="alignRight">Mar 2021 - Aug 2021</h2>
+                <h4>Improve UI experience for new CI/CD developer portal</h4>
+                <h4>Convert and upgrade existing CI/CD developer portal</h4>
+                <h4>Utilize Angular framework</h4>
                 <div class="spanColumns" style="border: 1px solid rgb(200 0 0);"></div>
+
                 <h2>Associate Software Engineer</h2>
                 <h2 class="alignRight">Aug 2019 - Feb 2021</h2>
+                <h4>
+                    Collaborate with business analysts to turn business requirements into code features
+                </h4>
+                <h4>
+                    Create automation tools to ease development and increase productivity
+                </h4>
+                <h4>
+                    Utilize the Java Spring framework for business requirements and Python for automation
+                </h4>
     
             </div>
     
@@ -275,25 +270,20 @@
                 </div>
             </div>
     
-            <div class="resumeSection twoColumnResumeSection" id="education">
-                <div class="spanColumns alignCenter">
+            <div class="resumeSection educationSection" id="education">
+                <div>
                     <h1>Education</h1>
                 </div>
-    
+
                 <div>
-                    <div class="university">
-                        <img src="images/UofABlockA.png">
-                        <h2>University of Arizona</h2>
-                    </div>
-                </div>
-    
-                <div style="margin-top: 2.5rem;">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <h3>Minor in Music</h3>
+                    <img src="images/UofABlockA.png">
+                    <h2>University of Arizona</h2>
+                    <h2> Aug 2015 - May 2019</h2>
                 </div>
 
-                <div class="spanColumns">
-                    <h3 style="text-align: center;">Graduated: 2019</h3>
+                <div>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h3>Minor in Music</h3>
                 </div>
             </div>
         </div>
