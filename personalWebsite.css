@@ -1,0 +1,120 @@
+@font-face{
+    font-family: 'Orbitron';
+    src: url('Orbitron/Orbitron-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(30 0 0);
+    color: white;
+    /**top right bottom left**/
+    margin: 0% 5% 0% 5%;
+}
+
+img{
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+
+.navBarContainer{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(30 0 0);
+    width: 100%;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem 1rem .5rem 1rem;
+}
+
+a:hover{
+    box-shadow: 0 0 .5em .175rem red, 0 0 .75rem .25rem white;
+} 
+
+.resumeContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+.resumeSection{
+    display: grid;
+    text-align: left;
+    border: .1em solid rgb(200 0 0);
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0 2rem 2rem 2rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    scroll-margin: 7.5rem;
+}
+
+.twoColumnResumeSection{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.spanColumns{
+    grid-column: 1 / -1;
+}
+
+.alignCenter{
+    text-align: center;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+.borderRight{
+    border-right: 1px solid rgb(200 0 0);
+}
+
+.aboutSection{
+    column-gap: 0;
+    row-gap: 1rem;
+}
+
+.experienceSection{
+    row-gap: 1rem;
+}
+
+.techSection{
+    grid-template-columns: repeat(8, 1fr);
+
+}
+
+.techSection img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.certGrid{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.university{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
