@@ -2,23 +2,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width-device-width, inital-scale=1">
     </head>
     <body>
+        <div class="navBarContainer" id="navBar">
+            <a class="navBarLink" href="#about">About</a>
+            <a class="navBarLink" href="#experience">Experience</a>
+            <a class="navBarLink" href="#technologies">Technical Skills</a>
+            <a class="navBarLink" href="#certifications">Certifcations</a>
+            <a class="navBarLink" href="#education">Education</a>
+        </div>
         <div class="resumeContainer">
-            <div class="navBarContainer" id="navBar">
-                <a class="navBarLink" href="#about">About</a>
-                <a class="navBarLink" href="#experience">Experience</a>
-                <a class="navBarLink" href="#technologies">Technical Skills</a>
-                <a class="navBarLink" href="#certifications">Certifcations</a>
-                <a class="navBarLink" href="#education">Education</a>
-            </div>
-    
-            <div  class="resumeSection twoColumnResumeSection aboutSection" id="about">
+            <div  class="resumeSection aboutSection" id="about">
                 <div class="spanColumns alignCenter">
                     <h1>About</h1>
                 </div>
 
-                <div class="borderRight" style="padding-right: 2rem;">
+                <div style="padding-right: 2rem; font-size: 1.2rem">
                     <p>
                         Hello world! I&#39m Kyle Fullerton, I'm a budding full-stack software engineer by trade and a gamer by choice.
                         I&#39ve found that gaming has given me different power ups that can relate to helping a company or team achieve their goals. 
@@ -49,64 +49,84 @@
                 </div>
 
                 <div class="alignCenter">
-                    <img src="images/kyle_2020.JPG" style="height: 28rem; width: 24rem">
+                    <img src="images/kyle_2020.JPG" alt="Kyle Fullerton" style="height: 28rem; width: 24rem">
                 </div>
 
-                <div class="spanColumns" style="border: 1px solid rgb(200 0 0); margin-top: 2rem;"></div>
+                <div class="divider" style="margin-top: 2rem;"></div>
 
-                <div class="alignCenter spanColumns">
-                    <h3 >Email: kfullerton752@gmail.com</h3>
-                </div>
-
-                <div class="alignCenter spanColumns">
+                <div>
+                    <h2 class="alignCenter margin-bottom: 2rem;">Contact</h2>
+                    <h3>Email: kfullerton752@gmail.com</h3>
                     <h3 style="display: inline;">Linkedin:</h3>
                     <a class="alignCenter pageLink" href="https://www.linkedin.com/in/kyle-fullerton-931162156" target="_blank">
                         www.linkedin.com/in/kyle-fullerton-931162156
                     </a>
                 </div>
-
             </div>
     
-            <div class="resumeSection twoColumnResumeSection experienceSection" id="experience">
+            <div class="resumeSection experienceSection" id="experience">
                 <div class="spanColumns alignCenter">
                     <h1>Experience</h1>
                 </div>
+                <div>
+                    <img src="images/Capital_One_logo.png" alt="Capital One Logo">
+                </div>
+                <div>
+                    <h2>Software Engineer</h2>
+                    <h3>Aug 2021 - Jan 2023</h3>
+                </div>
+                <h4>
+                    Collaborate with business analysts on making Java Spring updates to the loan origination
+                    system that generate millions of dollars in net present value
+                </h4>
+                <h4>
+                    Investigate and document loan origination system behavior via sending API requests to our
+                    Java Spring backend or querying various tables in our Oracle, Cassandra, and Snowflake data bases
+                </h4>
+                <h4>
+                    Refactor CI/CD portal by utilizing a micro service architecture to reduce code complexity
+                </h4>
+                <h4>
+                    Simplify routing logic of CI/CD portal to decrease time needed for making future routing changes
+                </h4>
+                <div class="spanColumns divider"></div>
 
-                <h2>Software Engineer</h2>
-                <h2 class="alignRight">Aug 2021 - Jan 2023</h2>
+                <div>
+                    <img src="images/Capital_One_logo.png" alt="Capital One Logo">
+                </div>
+                <div>
+                    <h2>Senior Associate Software Engineer</h2>
+                    <h3>Mar 2021 - Aug 2021</h3>
+                </div>
                 <h4>
-                    Collaborate with business analysts to turn business requirements into code features or
-                    fixes for our java spring boot applications
+                    Streamline UI experience for updated Angular CI/CD developer portal
+                    to make the portal more intuitive for new users
                 </h4>
                 <h4>
-                    Investigate and document loan origination system behavior through sending api requests,
-                    querying oracle database, and/or querying cassandra database
+                    Create new or update existing REST API endpoints for use with CI/CD portal
                 </h4>
                 <h4>
-                    Refactor ci/cd portal to utilize a micro service architecture in order to reduce code complexity
+                    Convert existing software release flow for Continuous Integration and Development
+                    (CI/CD) portal, that is used by thousands of users, from AngularJs to Angular
                 </h4>
-                <h4>
-                    Streamline routing logic of ci/cd portal to help with future development
-                </h4>
-                <div class="spanColumns" style="border: 1px solid rgb(200 0 0);"></div>
+                <div class="spanColumns divider"></div>
 
-                <h2>Senior Associate Software Engineer</h2>
-                <h2 class="alignRight">Mar 2021 - Aug 2021</h2>
-                <h4>Improve UI experience for new CI/CD developer portal</h4>
-                <h4>Convert and upgrade existing CI/CD developer portal</h4>
-                <h4>Utilize Angular framework</h4>
-                <div class="spanColumns" style="border: 1px solid rgb(200 0 0);"></div>
+                <div>
+                    <img src="images/Capital_One_logo.png" alt="Capital One Logo">
+                </div>
+                <div>
+                    <h2>Associate Software Engineer</h2>
+                    <h3>Aug 2019 - Feb 2021</h3>
+                </div>
 
-                <h2>Associate Software Engineer</h2>
-                <h2 class="alignRight">Aug 2019 - Feb 2021</h2>
                 <h4>
-                    Collaborate with business analysts to turn business requirements into code features
+                    Collaborate with business analysts on making Java Spring updates to the loan origination system
+                    that generate millions of dollars in net present value
                 </h4>
                 <h4>
-                    Create automation tools to ease development and increase productivity
-                </h4>
-                <h4>
-                    Utilize the Java Spring framework for business requirements and Python for automation
+                    Increase accuracy and efficiency of development workflows by hours each week. 
+                    Created a Python-based diff checker tool utilizing Github webhooks and Jenkins
+                    to automate the cross-checking of data file changes
                 </h4>
     
             </div>
@@ -119,134 +139,113 @@
                 <h2 class="spanColumns">Languages</h2>
 
                 <div>
-                    <img src="images/python.png">
+                    <img src="images/python.png" alt="Python logo">
+                    <h3>Python</h3>
                 </div>
-
-                <h3>Python</h3>
 
                 <div>
-                    <img src="images/html.png">
+                    <img src="images/html.png" alt="HTML logo">
+                    <h3>HTML</h3>
                 </div>
-
-                <h3>HTML</h3>
 
                 <div>
-                    <img src="images/css.png">
+                    <img src="images/css.png" alt="CSS logo">
+                    <h3>CSS</h3>
                 </div>
-
-                <h3>CSS</h3>
 
                 <div>
-                    <img src="images/javascript.png">
+                    <img src="images/javascript.png" alt="Javascript logo">
+                    <h3>Javascript</h3>
                 </div>
-
-                <h3>Javascript</h3>
 
                 <div>
-                    <img src="images/typescript.png">
+                    <img src="images/typescript.png" alt="Typescript logo">
+                    <h3>Typescript</h3>
                 </div>
-
-                <h3>Typescript</h3>
 
                 <div>
-                    <img src="images/java.png">
+                    <img src="images/java.png" alt="Java logo">
+                    <h3>Java</h3>
                 </div>
-
-                <h3>Java</h3>
 
                 <div>
-                    <img src="images/sql.png">
+                    <img src="images/sql.png" alt="SQL logo">
+                    <h3>SQL</h3>
                 </div>
-
-                <h3>SQL</h3>
 
                 <div>
-                    <img src="images/kotlin.jpg">
+                    <img src="images/kotlin.jpg" alt="Kotlin logo">
+                    <h3>Kotlin</h3>
                 </div>
-
-                <h3>Kotlin</h3>
 
                 <h2 class="spanColumns">Software</h2>
 
                 <div>
-                    <img src="images/git.png">
+                    <img src="images/git.png" alt="Git logo">
+                    <h3>Git</h3>
                 </div>
-
-                <h3>Git</h3>
 
                 <div>
-                    <img src="images/linux.jpg">
+                    <img src="images/linux.jpg" alt="Linux logo">
+                    <h3>Linux Terminal</h3>
                 </div>
-
-                <h3>Linux Terminal</h3>
 
                 <div>
-                    <img src="images/jenkins.png">
+                    <img src="images/jenkins.png" alt="Jenkins logo">
+                    <h3>Jenkins</h3>
                 </div>
-
-                <h3>Jenkins</h3>
 
                 <div>
-                    <img src="images/sql_developer.png">
+                    <img src="images/sql_developer.png" alt="SQL Developer Logo">
+                    <h3>SQL Developer</h3>
                 </div>
-
-                <h3>SQL Developer</h3>
 
                 <div>
-                    <img src="images/cassandra.png">
+                    <img src="images/cassandra.png" alt="Cassandra Logo">
+                    <h3>Cassandra</h3>
                 </div>
-
-                <h3>Cassandra</h3>
 
                 <div>
-                    <img src="images/aws.png">
+                    <img src="images/aws.png" alt="AWS Logo">
+                    <h3>AWS Console</h3>
                 </div>
-
-                <h3>AWS Console</h3>
 
                 <div>
-                    <img src="images/snowflake.png">
+                    <img src="images/snowflake.png" alt="Snowflake Logo">
+                    <h3>Snowflake</h3>
                 </div>
-
-                <h3>Snowflake</h3>
 
                 <h2 class="spanColumns">Frameworks</h2>
 
                 <div>
-                    <img src="images/django.png">
+                    <img src="images/django.png" alt="Django Logo">
+                    <h3>Django</h3>
                 </div>
-
-                <h3>Django</h3>
 
                 <div>
-                    <img src="images/angular.png">
+                    <img src="images/angular.png" alt="Angular Logo">
+                    <h3>Angular</h3>
                 </div>
-
-                <h3>Angular</h3>
 
                 <div>
-                    <img src="images/react.png">
+                    <img src="images/react.png" alt="React Logo">
+                    <h3>React</h3>
                 </div>
-
-                <h3>React</h3>
 
                 <div>
-                    <img src="images/java_spring.png">
+                    <img src="images/java_spring.png" alt="Java Spring Logo">
+                    <h3>Java Spring</h3>
                 </div>
-
-                <h3>Java Spring</h3>
 
                 <div>
-                    <img src="images/cucumber.png">
+                    <img src="images/cucumber.png" alt="Cucumber Logo">
+                    <h3>Cucumber</h3>
                 </div>
-
-                <h3>Cucumber</h3>
 
                 <div>
-                    <img src="images/karma.jpg">
+                    <img src="images/karma.jpg" alt="Karma Logo">
+                    <h3>Karma</h3>
                 </div>
-
-                <h3>Karma</h3>
             </div>
     
             <div class="resumeSection" id="certifications">

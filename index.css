@@ -7,8 +7,7 @@ body{
     font-family: 'Orbitron', 'sans-serif';
     background-color: rgb(30 0 0);
     color: white;
-    /**top right bottom left**/
-    margin: 0% 5% 0% 5%;
+    margin: 0;
 }
 
 img{
@@ -24,7 +23,8 @@ img{
     background-color: rgb(30 0 0);
     width: 100%;
     justify-content: center;
-    margin-top: 1rem;
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
 }
 
 .navBarLink{
@@ -52,6 +52,7 @@ img{
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2rem;
+    margin: 0 3rem 3rem 3rem;
 }
 
 .resumeSection{
@@ -71,12 +72,12 @@ img{
     font-size: 1.4 rem;
 }
 
-.twoColumnResumeSection{
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .spanColumns{
     grid-column: 1 / -1;
+}
+
+.divider{
+    border: 1px solid rgb(200 0 0);
 }
 
 .alignCenter{
@@ -102,14 +103,23 @@ img{
 
 .experienceSection h4{
     padding-left: 2rem;
+    font-family: sans-serif;
+}
+
+.experienceSection img{
+    width: 13rem; 
+    height: 5rem;
+    margin-top: 1.5rem;
+    background-color: white;
 }
 
 .techSection{
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minMax(400px, 1fr));
+    grid-gap: 1.5rem;
     column-gap: 1rem;
-
+    text-align: center;
 }
+
 
 .techSection img{
     height: 5rem;
@@ -118,7 +128,7 @@ img{
 
 .certGrid{
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(2 , 1fr);
     row-gap: 2rem;
     column-gap: 1rem;
     width: 50%;
