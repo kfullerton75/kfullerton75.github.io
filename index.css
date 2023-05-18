@@ -30,6 +30,22 @@
     }
  }
 
+@media (hover:hover){
+    .pageLink:hover{
+        color: rgb(200 0 0);
+    }
+
+    .navBarLink:hover::before{
+        content: "";
+        background: conic-gradient(from var(--angle), red,black,black);    
+        position: absolute;
+        inset: -.25rem;
+        border-radius: inherit;
+        z-index: -1;
+        animation: rotation 2s linear infinite;
+        filter: blur(3px);
+    }
+}
 
 body{
     font-family: 'Orbitron', 'sans-serif';
@@ -65,24 +81,12 @@ img{
     position: relative
 }
 
-.navBarLink:hover::before{
-    content: "";
-    background: conic-gradient(from var(--angle), red,black,black);    
-    position: absolute;
-    inset: -.25rem;
-    border-radius: inherit;
-    z-index: -1;
-    animation: rotation 2s linear infinite;
-    filter: blur(3px);
-}
 
 .pageLink{
     color: white;
 }
 
-.pageLink:hover{
-    color: rgb(200 0 0);
-}
+
 
 .resumeContainer{
     display: grid;
