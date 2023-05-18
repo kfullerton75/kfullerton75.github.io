@@ -3,9 +3,37 @@
     src: url('Orbitron/Orbitron-VariableFont_wght.ttf');
 }
 
+@property --angle{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes rotation{
+    0%{
+         --angle: 0deg;
+    }
+ 
+    100%{
+        --angle: 360deg;
+    }
+ }
+
+
+ @keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+ }
+
+
 body{
     font-family: 'Orbitron', 'sans-serif';
-    background-color: rgb(30 0 0);
+    background-color: black;
     color: white;
     margin: 0;
 }
@@ -20,7 +48,7 @@ img{
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: rgb(30 0 0);
+    background-color: black;
     width: 100%;
     justify-content: center;
     padding: 1rem 0rem;
@@ -30,14 +58,22 @@ img{
 .navBarLink{
     text-decoration: none;
     color: white;
+    background-color: black;
     font-size: 1.5rem;
     padding: 1rem;
     margin: 1rem 1rem .5rem 1rem;
+    position: relative
 }
 
-.navBarLink:hover{
-    box-shadow: 0 0 .5em .175rem rgb(200 0 0), 0 0 .75rem .25rem white;
-    color: rgb(200 0 0);
+.navBarLink:hover::before{
+    content: "";
+    background: conic-gradient(from var(--angle), red,black,black);    
+    position: absolute;
+    inset: -.25rem;
+    border-radius: inherit;
+    z-index: -1;
+    animation: rotation 2s linear infinite;
+    filter: blur(3px);
 }
 
 .pageLink{
@@ -64,13 +100,28 @@ img{
     padding: 0 2rem 2rem 2rem;
     row-gap: 2rem;
     column-gap: 2rem;
-    scroll-margin: 7.5rem;
+    scroll-margin: 9rem;
+    box-shadow: 15px 3px 20px rgb(200 0 0), -15px -3px 20px rgb(200 0 0);
 }
 
 .resumeSection p{
     font-family: 'sans-serif';
     font-size: 1.4 rem;
 }
+
+.show{
+    opacity: 0;
+    position: relative;
+}
+
+.show.active{
+    opacity: 1;
+}
+
+.active.fadeIn{
+    animation: fadeIn 1s ease-in;
+}
+
 
 .spanColumns{
     grid-column: 1 / -1;

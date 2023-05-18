@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="index.css">
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
-        <meta http-equiv='pragma' content='no-cache'>   
+        <meta http-equiv='pragma' content='no-cache'> 
     </head>
     <body>
         <div class="navBarContainer" id="navBar">
@@ -15,7 +15,7 @@
             <a class="navBarLink" href="#education">Education</a>
         </div>
         <div class="resumeContainer">
-            <div  class="resumeSection aboutSection" id="about">
+            <div  class="resumeSection aboutSection show fadeIn" id="about">
                 <div class="spanColumns alignCenter">
                     <h1>About</h1>
                 </div>
@@ -66,7 +66,7 @@
                 </div>
             </div>
     
-            <div class="resumeSection experienceSection" id="experience">
+            <div class="resumeSection experienceSection show fadeIn" id="experience">
                 <div class="spanColumns alignCenter">
                     <h1>Experience</h1>
                 </div>
@@ -133,7 +133,7 @@
     
             </div>
     
-            <div class="resumeSection techSection" id="technologies">
+            <div class="resumeSection techSection show fadeIn" id="technologies">
                 <div class="spanColumns alignCenter">
                     <h1>Technical Skills</h1>
                 </div>
@@ -250,7 +250,7 @@
                 </div>
             </div>
     
-            <div class="resumeSection" id="certifications">
+            <div class="resumeSection show fadeIn" id="certifications">
                 <h1 class="alignCenter">Certifications</h1>
                 
                 <div class="certGrid spanColumns">
@@ -271,7 +271,7 @@
                 </div>
             </div>
     
-            <div class="resumeSection educationSection" id="education">
+            <div class="resumeSection educationSection show fadeIn" id="education">
                 <div>
                     <h1>Education</h1>
                 </div>
@@ -289,4 +289,35 @@
             </div>
         </div>
     </body>
+    <script>
+        const resumeSections = document.querySelectorAll(".resumeSection");
+        /*
+        options for the observer. Root of null is default of using the viewport,
+        threshold is how much of the section needs to be in the viewport on scale of 0 to 1,
+        rootmargin is how much of an offset is applied to the viewport
+        */
+        const options = {
+            root: null,
+            threshold: .3,
+            rootMargin: "50px"
+        }
+        /*
+        Looks to see if a particular element on the page is visible on the screen. Then in my case,
+        add the active class to run the fade in animation
+        */
+        const observer = new IntersectionObserver(function(entries, observer){
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add("active");
+                }
+                else{
+                    entry.target.classList.remove("active");
+                }
+            })
+        }, options);
+
+        resumeSections.forEach(resumeSection => {
+            observer.observe(resumeSection);
+        });
+    </script>
 </html>
