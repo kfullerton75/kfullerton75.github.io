@@ -22,7 +22,7 @@
 
  @keyframes fadeIn{
     0%{
-        opacity: 0;
+        opacity: 0
     }
 
     100%{
@@ -69,6 +69,7 @@ img{
     justify-content: center;
     padding: 1rem 0rem;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .navBarLink{
@@ -86,7 +87,14 @@ img{
     color: white;
 }
 
+.audioButton{
+    border: .1rem solid rgb(200 0 0);
+    font-family: 'Orbitron', 'sans-serif';
+}
 
+.audioButton:hover{
+    cursor: pointer;
+}
 
 .resumeContainer{
     display: grid;
@@ -105,7 +113,7 @@ img{
     row-gap: 2rem;
     column-gap: 2rem;
     scroll-margin: 9rem;
-    box-shadow: 15px 3px 20px rgb(200 0 0), -15px -3px 20px rgb(200 0 0);
+    /* box-shadow: 15px 3px 20px rgb(200 0 0), -15px -3px 20px rgb(200 0 0); */
 }
 
 .resumeSection p{
@@ -125,7 +133,6 @@ img{
 .active.fadeIn{
     animation: fadeIn 1s ease-in;
 }
-
 
 .spanColumns{
     grid-column: 1 / -1;
@@ -147,6 +154,22 @@ img{
     border-right: 1px solid rgb(200 0 0);
 }
 
+.portfolioSection{
+    grid-template-columns: repeat(auto-fit, minMax(550px, 1fr));
+    column-gap: 2rem;
+    align-items: top;
+}
+
+.portfolioImage{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.imageLink:hover{
+    filter: brightness(75%);
+}
+
 .aboutSection{
     column-gap: 0;
     row-gap: 1rem;
@@ -159,6 +182,10 @@ img{
 .experienceSection h4{
     padding-left: 2rem;
     font-family: sans-serif;
+}
+
+.experienceSection h2, .experienceSection h3{
+    color: rgb(200 0 0);
 }
 
 .experienceSection img{
@@ -199,6 +226,15 @@ img{
 .university{
     display: flex;
     align-items: center;
+}
+
+.volunteerSection h4{
+    padding-left: 2rem;
+    font-family: sans-serif;
+}
+
+.volunteerSection h2, .volunteerSection h3{
+    color: rgb(200 0 0);
 }
 
 

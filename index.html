@@ -5,49 +5,93 @@
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
         <meta http-equiv='pragma' content='no-cache'> 
+        <title>Kyle Fullerton Portfolio Website</title>
     </head>
     <body>
         <div class="navBarContainer" id="navBar">
+            <a class="navBarLink" href="#portfolio">Portfolio</a>
             <a class="navBarLink" href="#about">About</a>
             <a class="navBarLink" href="#experience">Experience</a>
             <a class="navBarLink" href="#technologies">Technical Skills</a>
             <a class="navBarLink" href="#certifications">Certifcations</a>
+            <a class="navBarLink" href="#volunteer">Volunteer Work</a>
             <a class="navBarLink" href="#education">Education</a>
+            <button class="navBarLink audioButton" onclick="controlMusic(event)" id="musicButton">Play</button>
         </div>
         <div class="resumeContainer">
+            <div class="resumeSection portfolioSection show fadeIn" id="portfolio">
+                <div class="spanColumns alignCenter">
+                    <h1>Portfolio</h1>
+                </div>
+                <div style="font-size: 1.2rem">
+                    <p>
+                        One video game that I love to play is Pokemon! So I thought I&#39d showcase my full stack skills through
+                        creating an application based on an aspect of the Pokemon games, the Battle Frontier. I created a 
+                        single page application where you can look up different Pokemon sets and what Pokemon sets particular
+                        trainers have. Information is key when battling in Pokemon since your winning streak can come down to
+                        knowing what particular moves or items your opponents Pokemon have. Currently, there isn&#39t a great way
+                        to look up this information. Some websites do have the information but you have to constantly click 
+                        between different pages to get what you&#39re looking for. Also, no website is going to have all the battle
+                        facility Pokemon and trainers in one place. 
+                    </p>
+                    <p>
+                        I learned a lot through creating this project,as I created this whole thing myself, from planning out an
+                        idea I had for a project to executing my vision. From the backend perspective, I created my own REST API
+                        to manage the data through using the Django framework. I got a sense for how Django manages data through
+                        models and serializers and how to set up the different end point functionality with views. From the frontend
+                        perspective, I utilized React for creating the UI I designed. I learned how React utilizes components for 
+                        building frontends as well as how the different hooks work, such as to manage the state of the application.
+                        Lastly, I gained skills for deploying all pieces of this project together. I went with creating a build for 
+                        the React frontend so I didn&#39t need two different servers but I had to manage Cross Origin Resource Sharing
+                        in order for my frontend to get the info needed from the backend. I was comfortable with deploying my 
+                        application on AWS since I already had knowledge of the platform. What was novel to me was configuring a 
+                        web server for serving my application. I utilized gunicorn and nginx to serve my application as this was a 
+                        fairly popular way to serve Django applications. This project was a labor of love that allowed me to not only
+                        grow my skill set but also showcase what I can do as a software engineer. 
+                    </p>
+                </div>
+
+                <a href="http://ec2-3-135-120-157.us-east-2.compute.amazonaws.com/" target="_blank" class="imageLink">
+                    <img src="./images/pokemon_application.PNG" class="portfolioImage" alt="Pokemon Application">
+                </a>
+
+                <div class="spanColumns alignCenter">
+                    <h2>Tech Used</h2>
+                    <img src="/images/django.png" alt="Django">
+                    <img src="/images/python.png" alt="Python">
+                    <img src="/images/react.png" alt="React">
+                    <img src="/images/html.png" alt="HTML">
+                    <img src="/images/css.png" alt="CSS">
+                    <img src="/images/javascript.png" alt="Javascript">
+                    <img src="/images/git.png" alt="Git">
+                    <img src="/images/aws.png" alt="AWS">
+                </div>
+
+            </div>
             <div  class="resumeSection aboutSection show fadeIn" id="about">
                 <div class="spanColumns alignCenter">
                     <h1>About</h1>
                 </div>
 
-                <div style="padding-right: 2rem; font-size: 1.2rem">
+                <div style="padding-right: 2rem; font-size: 1.2rem"> 
                     <p>
-                        Hello world! I&#39m Kyle Fullerton, I'm a budding full-stack software engineer by trade and a gamer by choice.
-                        I&#39ve found that gaming has given me different power ups that can relate to helping a company or team achieve their goals. 
+                        Hello World! I&#39m Kyle Fullerton, a software engineer at your service! I&#39m currently seeking employment
+                        with a focus on full stack developer roles but I am definitely open to working anywhere on the tech stack. 
                     </p>
-
                     <p>
-                        Puzzle games require me to utilize unconventional thinking to help me overcome obstacles.
-                        The same is true for solving business problems. Not every problem is going to have a straightforward solution so having 
-                        ability to think in an unorthodox manner can create elegant solutions.
+                        I&#39m gravitated towards working as a full stack developer since there&#39s always an opportunity to learn
+                        a new skill or technology. I don&#39t have to fixate on one part of the tech stack and can move to improve
+                        other areas of my skill set when I feel I&#39ve stagnated. With the ability to do it all, I can fit seamlessly
+                        in any team environment or work independently through my knowledge on how to work on applications from the
+                        design phase all the way through to a finished deployed product. 
                     </p>
-    
                     <p>
-                        Platformers I have to learn new mechanics each level while also dealing with a lot of failure, before accomplishing my goal
-                        of beating the game. The same is true with software engineering. Continual updates to technology require a constant learning
-                        mindset to stay up to date. While persistence is needed as figuring out a solution to a problem isn&#39t typically perfect in one go.
+                        In my free time, I enjoy playing video games, singing, playing board games, watching sports, 
+                        playing pickleball and ultimate frisbee, and watching musical theater. 
                     </p>
-    
                     <p>
-                        Tackling role-playing games is all about utilizing game mechanics to my advantage. Using certain abilities to make fights end 
-                        quicker or items to ease the grind of leveling up my character. I too work to make my team&#39s life easier through designing and
-                        implementing tools to automate or improve existing workflows.
+                        Feel free to reach out for any possible software engineer roles. My contact info is listed below! 
                     </p>
-    
-                    <p>
-                        This leaves me with one question. How can I help your company or team level up?
-                    </p>
-
                 </div>
 
                 <div class="alignCenter">
@@ -63,6 +107,12 @@
                     <a class="alignCenter pageLink" href="https://www.linkedin.com/in/kyle-fullerton-931162156" target="_blank">
                         www.linkedin.com/in/kyle-fullerton-931162156
                     </a>
+                    <div style="margin-top: 1rem;">
+                        <h3 style="display: inline;">Github:</h3>
+                        <a class="alignCenter pageLink" href="https://github.com/kylefullerton" target="_blank">
+                            https://github.com/kylefullerton
+                        </a>
+                    </div>
                 </div>
             </div>
     
@@ -75,7 +125,7 @@
                 </div>
                 <div>
                     <h2>Software Engineer</h2>
-                    <h3>Aug 2021 - Jan 2023</h3>
+                    <h3>Aug 2021 - 2023</h3>
                 </div>
                 <h4>
                     Collaborate with business analysts on making Java Spring updates to the loan origination
@@ -270,6 +320,53 @@
                     <h2>Secure Software Engineer Associate</h2>
                 </div>
             </div>
+
+            <div class="resumeSection volunteerSection show fadeIn" id="volunteer">
+                <h1 class="alignCenter">Volunteer Work</h1>
+
+                <div>
+                    <div>
+                        <img src="images/coders.jpg">
+                    </div>
+                    <h2>Coders Instructor</h2>
+                    <h3>Feb 2021 - Apr 2021</h3>
+                    <h4>Teach a 10 week remote course with another instructor on basic html/css</h4>
+                    <h4>Prepare curriculum for each week and create demos to help students visualize the lesson</h4>
+                    <h4>Answer any questions from mentors or students on material</h4>
+                    <h4>Adjust lesson plans/ exercises based on mentor feedback</h4>
+                    <p>
+                        I took on more responsibility with the coders program and taught the material.
+                        Continued doing the remote basic css/html course.
+                        Each week I'd partner with my co-instructor and go over the material we were teaching that week.
+                        We would also prepare demos to help students visualize the concepts we were covering for the week.
+                        Students were able to go through examples and then work towards creating a group website to present
+                        at the end of the program to their friends and family.
+                    </p>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="images/coders.jpg">
+                    </div>
+                    <h2>Coders Mentor</h2>
+                    <h3>Sep 2019 - Nov 2020 and Sep 2022 - Nov 2022</h3>
+                    <h4>Help teach coding concepts through MIT app inventor and HTML/CSS</h4>
+                    <h4>Answer questions students have on the material and show examples to check understanding</h4>
+                    <h4>Guide students on process of creating their own app/website</h4>
+                    <p>
+                        The Coders program teaches underserved middle school students coding concepts.
+                        How the concepts are taught varies on the program.
+                        I volunteered for both the MIT App inventor course where students
+                        learn mobile development with a block-based programming language
+                        and another course that was all remote teaching basic css/html for web development.
+                        As a mentor, I make sure students understand the material and answer any questions they may have.
+                        Help guide students through practice examples for the week.
+                        Also, students get to create their own app/website
+                        for the last month of the course and show it off to their friends and family.
+                    </p>
+                    
+                </div>
+            </div>
     
             <div class="resumeSection educationSection show fadeIn" id="education">
                 <div>
@@ -287,10 +384,29 @@
                     <h3>Minor in Music</h3>
                 </div>
             </div>
+
+            <!-- <div class="resumeSection show fadeIn" id="interests">
+                <h1 class="alignCenter">Interests</h1>
+            </div> -->
         </div>
+        <audio loop id="audioPlayer">
+            <source src="/audio/Professor Layton Theme.mp3" type="audio/mpeg"/>
+        </audio>
     </body>
     <script>
         const resumeSections = document.querySelectorAll(".resumeSection");
+        let playMusic = false;
+        function controlMusic(event){
+            playMusic = !playMusic;
+            if(playMusic){
+                document.getElementById("audioPlayer").play();
+                document.getElementById("musicButton").textContent = "Pause";
+            }
+            else{
+                document.getElementById("audioPlayer").pause();
+                document.getElementById("musicButton").textContent = "Play";
+            }
+        }
         /*
         options for the observer. Root of null is default of using the viewport,
         threshold is how much of the section needs to be in the viewport on scale of 0 to 1,
@@ -308,9 +424,11 @@
         const observer = new IntersectionObserver(function(entries, observer){
             entries.forEach(entry => {
                 if(entry.isIntersecting){
+                    entry.target.classList.remove("inactive");
                     entry.target.classList.add("active");
                 }
                 else{
+                    entry.target.classList.add("inactive");
                     entry.target.classList.remove("active");
                 }
             })
@@ -319,5 +437,7 @@
         resumeSections.forEach(resumeSection => {
             observer.observe(resumeSection);
         });
+
+
     </script>
 </html>
