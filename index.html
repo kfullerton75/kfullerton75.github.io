@@ -4,7 +4,12 @@
         <link rel="stylesheet" href="index.css">
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
-        <meta http-equiv='pragma' content='no-cache'> 
+        <meta http-equiv='pragma' content='no-cache'>
+        <meta name="keywords" content="Kyle Fullerton, software engineer, portfolio website, full-stack engineer,
+        backend engineer, frontend engineer, python developer, java developer, tech talent">
+        <meta name="description" content="Kyle Fullerton's portfolio website that showcases his resume as well as 
+        the various projects he has been working on. Kyle Fullerton is currently looking for a software engineering
+        job in Phoneix,Arizona or remote.">
         <title>Kyle Fullerton Portfolio Website</title>
     </head>
     <body>
@@ -16,7 +21,7 @@
             <a class="navBarLink" href="#certifications">Certifcations</a>
             <a class="navBarLink" href="#volunteer">Volunteer Work</a>
             <a class="navBarLink" href="#education">Education</a>
-            <button class="navBarLink audioButton" onclick="controlMusic(event)" id="musicButton">Play</button>
+            <!-- <button class="navBarLink audioButton" onclick="controlMusic(event)" id="musicButton">Play</button> -->
         </div>
         <div class="resumeContainer">
             <div class="resumeSection portfolioSection show fadeIn" id="portfolio">
@@ -52,19 +57,19 @@
                 </div>
 
                 <a href="http://ec2-3-135-120-157.us-east-2.compute.amazonaws.com/" target="_blank" class="imageLink">
-                    <img src="./images/pokemon_application.PNG" class="portfolioImage" alt="Pokemon Application">
+                    <img src="./images/pokemon_application2.png" class="portfolioImage" alt="Pokemon Application">
                 </a>
 
                 <div class="spanColumns alignCenter">
                     <h2>Tech Used</h2>
-                    <img src="/images/django.png" alt="Django">
-                    <img src="/images/python.png" alt="Python">
-                    <img src="/images/react.png" alt="React">
-                    <img src="/images/html.png" alt="HTML">
-                    <img src="/images/css.png" alt="CSS">
-                    <img src="/images/javascript.png" alt="Javascript">
-                    <img src="/images/git.png" alt="Git">
-                    <img src="/images/aws.png" alt="AWS">
+                    <img src="images/django.png" alt="Django">
+                    <img src="images/python.png" alt="Python">
+                    <img src="images/react.png" alt="React">
+                    <img src="images/html.png" alt="HTML">
+                    <img src="images/css.png" alt="CSS">
+                    <img src="images/javascript.png" alt="Javascript">
+                    <img src="images/git.png" alt="Git">
+                    <img src="images/aws.png" alt="AWS">
                 </div>
 
             </div>
@@ -403,6 +408,18 @@
                 document.getElementById("musicButton").textContent = "Play";
             }
         }
+        // Smooth scrolling functionality using JavaScript 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => { 
+            anchor.addEventListener('click', function (e) { 
+                e.preventDefault(); 
+                const targetElement =  
+                      document.querySelector(this.getAttribute('href')); 
+                window.scrollTo({ 
+                    top: targetElement.offsetTop - 300, 
+                    behavior: 'smooth' 
+                }); 
+            }); 
+        }); 
         /*
         options for the observer. Root of null is default of using the viewport,
         threshold is how much of the section needs to be in the viewport on scale of 0 to 1,

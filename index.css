@@ -32,12 +32,12 @@
 
 @media (hover:hover){
     .pageLink:hover{
-        color: rgb(200 0 0);
+        color: rgb(0 200 200);
     }
 
     .navBarLink:hover::before{
         content: "";
-        background: conic-gradient(from var(--angle), red,black,black);    
+        background: conic-gradient(from var(--angle), rgb(0 200 200),black,black);    
         position: absolute;
         inset: -.25rem;
         border-radius: inherit;
@@ -50,6 +50,9 @@
 body{
     font-family: 'Orbitron', 'sans-serif';
     background-color: black;
+    background-size: 120px 120px;
+    background-image: linear-gradient(to right, rgb(0 100 100) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(0 100 100) 1px, transparent 1px);
     color: white;
     margin: 0;
 }
@@ -64,7 +67,7 @@ img{
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: black;
+    background-color: rgb(0 0 0 / 90%);
     width: 100%;
     justify-content: center;
     padding: 1rem 0rem;
@@ -75,11 +78,11 @@ img{
 .navBarLink{
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: rgb(0 0 0 / 90%);
     font-size: 1.5rem;
     padding: 1rem;
     margin: 1rem 1rem .5rem 1rem;
-    position: relative
+    position: relative;
 }
 
 
@@ -88,7 +91,7 @@ img{
 }
 
 .audioButton{
-    border: .1rem solid rgb(200 0 0);
+    border: .1rem solid rgb(0 200 200);
     font-family: 'Orbitron', 'sans-serif';
 }
 
@@ -106,14 +109,14 @@ img{
 .resumeSection{
     display: grid;
     text-align: left;
-    border: .1em solid rgb(200 0 0);
+    border: .1em solid rgb(0, 200, 200);
     align-items: center;
     border-radius: 1rem;
     padding: 0 2rem 2rem 2rem;
     row-gap: 2rem;
     column-gap: 2rem;
-    scroll-margin: 9rem;
-    /* box-shadow: 15px 3px 20px rgb(200 0 0), -15px -3px 20px rgb(200 0 0); */
+    box-shadow: .8rem .2rem 2rem rgb(0 200 200) inset, -.8rem -.2rem 2rem rgb(0 200 200) inset;
+    background-color: rgb(0 35 35 / 75%);
 }
 
 .resumeSection p{
@@ -139,7 +142,7 @@ img{
 }
 
 .divider{
-    border: 1px solid rgb(200 0 0);
+    border: 1px solid rgb(0 200 200);
 }
 
 .alignCenter{
@@ -151,7 +154,7 @@ img{
 }
 
 .borderRight{
-    border-right: 1px solid rgb(200 0 0);
+    border-right: 1px solid rgb(0 200 200);
 }
 
 .portfolioSection{
@@ -167,7 +170,7 @@ img{
 }
 
 .imageLink:hover{
-    filter: brightness(75%);
+    filter: brightness(25%);
 }
 
 .aboutSection{
@@ -185,7 +188,7 @@ img{
 }
 
 .experienceSection h2, .experienceSection h3{
-    color: rgb(200 0 0);
+    color: rgb(0 200 200);
 }
 
 .experienceSection img{
@@ -234,7 +237,7 @@ img{
 }
 
 .volunteerSection h2, .volunteerSection h3{
-    color: rgb(200 0 0);
+    color: rgb(0 200 200);
 }
 
 
